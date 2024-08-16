@@ -6,7 +6,7 @@ $password = '';
 
 try {
     // Criando a conexão com o banco de dados usando PDO
-    $pdo = new PDO("mysql:host=$dns;charset=utf8", $username, $password);
+    $pdo = new PDO("mysql:host=$dsn;charset=utf8", $username, $password);
 
     // Configurando o PDO para lançar exceções em caso de erro
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

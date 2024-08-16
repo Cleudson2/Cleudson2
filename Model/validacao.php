@@ -1,7 +1,11 @@
 <?php
 // Iniciar a sessão
 session_start();
-include '..\Controller\conexao.php';
+// include '..\Controller\conexao.php';
+$dsn = 'mysql:host=localhost;dbname=sistema_igreja';
+$username = 'root';
+$password = '';
+
 
 try {
     $pdo = new PDO($dsn, $username, $password);
@@ -30,7 +34,7 @@ try {
             $_SESSION['user_nome'] = $user['nome'];
 
             // Redireciona para uma página interna após o login
-            header("Location: dashboard.php");
+            header("Location: ..\View\pagina1.php");
             exit; // Garante que o código posterior não seja executado
         } else {
                 echo "erro";
