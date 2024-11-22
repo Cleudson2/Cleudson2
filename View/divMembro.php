@@ -62,7 +62,6 @@
                 ?>
                     </datalist>
                 </div>
-                <br>
-                   <input type="submit" class="btn btn-primary mb-2"> 
+                
                 </div>
               </div>
